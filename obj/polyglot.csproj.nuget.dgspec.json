@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\polyglot\\polyglot.csproj": {}
+    "C:\\repos\\Polyglot\\polyglot.csproj": {}
   },
   "projects": {
-    "C:\\repos\\polyglot\\polyglot.csproj": {
+    "C:\\repos\\Polyglot\\polyglot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\polyglot\\polyglot.csproj",
+        "projectUniqueName": "C:\\repos\\Polyglot\\polyglot.csproj",
         "projectName": "polyglot",
-        "projectPath": "C:\\repos\\polyglot\\polyglot.csproj",
+        "projectPath": "C:\\repos\\Polyglot\\polyglot.csproj",
         "packagesPath": "C:\\Users\\A141QT\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\polyglot\\obj\\",
+        "outputPath": "C:\\repos\\Polyglot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
