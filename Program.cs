@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using polyglot.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add database connection
+var connectionString = builder.Configuration.GetConnectionString("DatabaseConnection");
+builder.Services.AddDbContext<PolyglotDbContext>(options => options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
