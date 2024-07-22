@@ -1,0 +1,50 @@
+﻿@model IEnumerable<polyglot.Models.Word>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p style="margin-left: 100px">
+    <a asp-action="Create">Ajouter un nouveau mot</a>
+</p>
+<p>
+    <a asp-action="Import">Importer une liste de mots</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.WordFr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WordEn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WordEs)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.WordFr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WordEn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WordEs)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

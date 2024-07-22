@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("polyglot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67fec83655672bc291fa68cc4df241a7950cc7b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4eba02c0782c4ecc6474b99d2fda753d33b94c2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("polyglot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("polyglot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

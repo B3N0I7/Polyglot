@@ -1,0 +1,43 @@
+﻿@model polyglot.Models.Word
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Ajouter 1 mot</h1>
+
+<!--<h4>Word</h4>-->
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="WordFr" class="control-label"></label>
+                <input asp-for="WordFr" class="form-control" />
+                <span asp-validation-for="WordFr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WordEn" class="control-label"></label>
+                <input asp-for="WordEn" class="form-control" />
+                <span asp-validation-for="WordEn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WordEs" class="control-label"></label>
+                <input asp-for="WordEs" class="form-control" />
+                <span asp-validation-for="WordEs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ajouter" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-secondary" asp-action="Index">Retour</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

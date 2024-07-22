@@ -27,7 +27,9 @@
         ],
         "sources": {
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://afa-nrepo-nuget.azure-paas.intraxa/repository/group/index.json": {}
+          "https://afa-nrepo-nuget.azure-paas.intraxa/repository/group/index.json": {},
+          "https://afa-nrepo.azure-paas.intraxa/repository/nuget-group": {},
+          "https://afa-nrepo.azure-paas.intraxa/repository/registry.npmjs.org-proxy/": {}
         },
         "frameworks": {
           "net8.0": {
@@ -69,6 +71,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.3, )"
             }
           },
           "imports": [

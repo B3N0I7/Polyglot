@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Import";
+}
+
+<h1>Importer une liste de mots</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Import" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <label for="file">Fichier à importer</label>
+                <input type="file" name="file" id="file" class="form-control-file" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Importer" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-secondary" asp-action="Index">Retour</a>
+</div>
+
